@@ -1,24 +1,142 @@
-Privacy Policy for Claude Usage Widget
-Last updated: May 8, 2026
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Claude Usage Widget</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
 
-Claude Usage Widget is a Chrome extension that displays Claude usage information while you are using claude.ai.
+    body {
+      margin: 0;
+      background: Canvas;
+      color: CanvasText;
+    }
 
-Data Access
-The extension reads Claude usage and prepaid credit information from Claude's own authenticated endpoints while you are signed in to claude.ai. This may include usage percentages, reset times, organization identifier data required by Claude's API, prepaid credit balance, and related usage limits.
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
 
-Data Use
-The extension uses this data only to display the floating usage widget on claude.ai.
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
 
-Data Sharing
-The extension does not sell, transmit, store, or share your Claude usage data with the developer or any third party.
+    .updated {
+      margin: 0 0 32px;
+      color: color-mix(in srgb, CanvasText 65%, Canvas);
+    }
 
-Storage
-The extension uses Chrome's extension storage to save widget preferences such as selected colors, percentage thresholds, visible bars, and reset-to-default choices. These preferences are used only to customize the local widget.
+    h2 {
+      margin: 28px 0 8px;
+      font-size: 1.15rem;
+    }
 
-The extension does not store Claude usage data, prepaid credit data, local storage, session storage, cookies, analytics, or tracking data.
+    p,
+    ul {
+      margin: 0 0 14px;
+    }
 
-Network Requests
-The extension only makes same-site requests to claude.ai endpoints needed to display usage information. It does not contact external servers.
+    li {
+      margin: 0 0 6px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy for Claude Usage Widget</h1>
+    <p class="updated">Last updated: June 10, 2026</p>
 
-Contact
-For privacy questions, contact the extension developer through the support contact listed on the Chrome Web Store listing.
+    <p>Claude Usage Widget is a Chrome extension that runs on https://claude.ai/*. It adds usage indicators, local chat organization tools, a todo list, saved prompts, thinking-block expansion, and an optional Prompt Enhancer for prompts you choose to rewrite.</p>
+    <p>This policy explains what data the extension handles, how that data is used, where it is stored, and when it is shared.</p>
+
+    <h2>Single Purpose</h2>
+    <p>The extension's single purpose is to improve the signed-in claude.ai user interface with local productivity tools and optional prompt rewriting. The extension uses data only for the user-facing features described in this policy.</p>
+
+    <h2>Data the Extension Handles</h2>
+    <p>The extension handles data only on claude.ai and through the extension options page.</p>
+    <p>Depending on which features are enabled, the extension may access or process:</p>
+    <ul>
+      <li>Claude page content and page structure needed to insert extension controls, organize the sidebar, hide or show Claude's native Recents section, and expand visible thinking blocks.</li>
+      <li>Claude authenticated API responses requested from claude.ai, including usage limits, usage percentages, reset times, prepaid credit balance, organization identifiers, membership or account metadata needed to identify the active organization, project metadata, and chat metadata.</li>
+      <li>Chat and project metadata used by the local organizer, such as project IDs, project titles, chat IDs, chat titles, chat order, starred state, custom section names, collapsed state, pinned chats, and panel visibility.</li>
+      <li>Extension settings, including enabled features, visible usage bars, colors, thresholds, and light or dark widget choices.</li>
+      <li>Todo text and todo completion state that you create in the extension.</li>
+      <li>Saved prompt text that you choose to save in the extension.</li>
+      <li>The current prompt text only when you click Enhance Prompt or Save Prompt.</li>
+      <li>Your IP address and request metadata when you use Prompt Enhancer, as processed by Cloudflare for request handling and rate limiting.</li>
+    </ul>
+    <p>The extension does not intentionally collect or store full Claude conversation transcripts, Claude cookies, Claude authentication tokens, passwords, browser history, analytics identifiers, or browsing activity outside claude.ai.</p>
+
+    <h2>How Data Is Used</h2>
+    <p>The extension uses the data above only to provide and improve its user-facing features:</p>
+    <ul>
+      <li>Usage and credit data is used to display the floating usage widget.</li>
+      <li>Claude organization identifiers are used to request the relevant Claude usage, project, and chat data for your signed-in session.</li>
+      <li>Claude project and chat metadata is used to render and update the local sidebar organizer.</li>
+      <li>Page content and page structure are used to place extension controls, expand visible thinking blocks when enabled, and keep the extension UI aligned with Claude's interface.</li>
+      <li>Settings are used to remember feature toggles, visible bars, colors, thresholds, and theme choices.</li>
+      <li>Todo text is used to display your local todo list.</li>
+      <li>Saved prompt text is used to show and reinsert prompts you choose to save.</li>
+      <li>Prompt text sent through Prompt Enhancer is used to generate a rewritten prompt.</li>
+      <li>IP-based rate-limit data is used to prevent abuse of the Prompt Enhancer service.</li>
+    </ul>
+    <p>The extension does not use user data for advertising, personalized advertising, retargeting, sale, data brokerage, credit decisions, or unrelated analytics.</p>
+
+    <h2>Storage</h2>
+    <p>The extension uses Chrome extension storage for normal extension operation.</p>
+    <p>Chrome sync storage is used for extension settings, including feature toggles, widget preferences, visible bars, colors, thresholds, and theme choices. If Chrome Sync is enabled in your browser, Chrome may sync this settings data through your Chrome or Google account. The extension developer does not receive this settings data from Chrome storage.</p>
+    <p>Chrome local storage is used for local feature data, including:</p>
+    <ul>
+      <li>Todo items and todo collapsed state.</li>
+      <li>Saved prompts that you choose to save.</li>
+      <li>Sidebar organizer state, including custom header names, header order, collapsed state, chat IDs assigned to headers, remembered chat titles, pinned chats, top-level chat IDs, project ordering choices, and panel visibility.</li>
+    </ul>
+    <p>If Chrome extension storage is unavailable, the todo list and todo collapsed state may be stored in the browser's local storage for claude.ai as a fallback.</p>
+    <p>Usage responses, prepaid credit responses, project API responses, and chat API responses are kept only in memory while the extension is running and are not intentionally persisted by the extension.</p>
+
+    <h2>Network Requests and Sharing</h2>
+    <p>The extension makes same-site requests to claude.ai authenticated endpoints to display usage data and support organizer actions. These requests are sent to Claude/Anthropic as part of your existing signed-in Claude session. The browser may include your Claude cookies with those requests, but the extension does not read, copy, or store the cookie values.</p>
+    <p>If you click Enhance Prompt, the extension sends the current prompt text to:</p>
+    <ul>
+      <li>https://claude-prompt-enhancer.batchbuddy.workers.dev, a Cloudflare Worker operated for this extension.</li>
+      <li>Anthropic's Messages API, which the Worker calls to generate the rewritten prompt.</li>
+    </ul>
+    <p>Prompt Enhancer sends only the prompt text needed for that action. It does not send your full chat history, saved prompts list, todos, Claude usage data, Chrome storage contents, Claude cookies, Claude authentication tokens, or other Claude credentials.</p>
+    <p>The Cloudflare Worker used for Prompt Enhancer does not intentionally persist prompt text. When rate limiting storage is enabled, the Worker stores an hourly rate-limit counter keyed by IP address for about two hours. Cloudflare may process IP address, request metadata, and related infrastructure logs to provide and secure the Worker service. Anthropic receives the prompt text submitted to Prompt Enhancer to generate the rewritten prompt.</p>
+    <p>The extension does not sell user data, share user data with advertising networks, or transfer user data to data brokers. Data is shared only as needed to provide the extension features described in this policy, comply with law, respond to your explicit support request, or protect against abuse or security issues.</p>
+
+    <h2>Human Access</h2>
+    <p>The extension developer does not allow humans to read user data except when:</p>
+    <ul>
+      <li>You give explicit consent for a specific support request.</li>
+      <li>Access is necessary for security or abuse investigation.</li>
+      <li>Access is necessary to comply with applicable law.</li>
+      <li>Data has been aggregated and anonymized for internal operations.</li>
+    </ul>
+
+    <h2>Data Retention and Deletion</h2>
+    <p>Settings, todos, saved prompts, and organizer state remain in Chrome extension storage until you delete them, reset the relevant feature data, clear the extension's storage data, or uninstall the extension.</p>
+    <p>Todo fallback data in claude.ai local storage remains until you clear that site storage or overwrite it through the extension.</p>
+    <p>Prompt Enhancer rate-limit counters, when enabled on the Worker, expire after about two hours. The extension developer does not intentionally store prompt text submitted to Prompt Enhancer.</p>
+
+    <h2>Security</h2>
+    <p>The extension transmits data over HTTPS. The extension does not ask for your Claude password, does not read or store Claude cookie values, and does not store Claude authentication tokens.</p>
+
+    <h2>Limited Use</h2>
+    <p>The extension's use and transfer of user data is limited to providing or improving the extension's single purpose and user-facing features, complying with law, responding to user-approved support requests, and protecting against abuse or security issues.</p>
+    <p>The extension's use of information received from Chrome extension APIs and Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+    <p>The extension does not transfer, use, or sell user data for personalized advertisements, retargeted advertisements, interest-based advertisements, data brokerage, information resale, or credit-worthiness or lending decisions.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact the extension developer through the support contact listed on the Chrome Web Store listing.</p>
+  </main>
+</body>
+</html>
